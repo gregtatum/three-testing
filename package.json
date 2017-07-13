@@ -1,0 +1,28 @@
+{
+  "name": "three-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test | faucet",
+    "test-browser": "budo test --live --open",
+    "test-update-snapshots": "UPDATE_SNAPSHOT=1 npm run test"
+  },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "brfs": "^1.4.3",
+    "budo": "^10.0.3",
+    "diff": "^3.3.0",
+    "faucet": "0.0.1",
+    "gl": "^4.0.4",
+    "tape": "^4.7.0",
+    "three": "^0.86.0"
+  }
+}
